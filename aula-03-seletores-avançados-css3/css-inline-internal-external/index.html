@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inline, Internal e External</title>
+    <!-- CSS EXTERNAL... -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS INTERNAL -->
+     <style>
+        header p{
+            color: chocolate;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <!-- Esse é o CSS INLINE... -->
+        <h1 style="color: green;">CSS Inline, Internal e External</h1>
+        <p>Conhecendo os 3 tipos de CSS.</p>
+    </header>
+    <p>Este é um parágrafo aleatório</p>
+    <p class="beijo">Este parágrafo possui uma CLASSE</p>
+    <p class="beijo">Este aqui possui a mesma CLASSE que o anterior</p>
+    <!-- Quando estamos trabalhando com fotmatação, é preferivel usar CLASS -->
+    <hr>
+    <h3>Passe o mouse aqui:</h3>
+
+    <div class="box">
+        Passa aqui!
+    </div>
+    <br><br>
+    <button class="btn-download">Download</button>
+</body>
+</html>
