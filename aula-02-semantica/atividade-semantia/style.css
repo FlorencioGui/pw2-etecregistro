@@ -24,9 +24,12 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
+    display: inline-block;
+    transition: 0.2s;
 }
 nav ul li a:hover{
     color: #cccccc;
+    transform: scale(1.1);
 }
 header{
     text-align: center;
@@ -34,9 +37,6 @@ header{
     background-image: url(imagens/wallpaper2.png);
     background-size: 100% 100%;
     padding: 20px;
-}
-.logo{
-    
 }
 main{
     color: #f1f1f1;
@@ -49,4 +49,10 @@ main h3{
     border-radius: 6px;
     padding: 10px;
     border-top: #FF4471 solid 5px;
+}
+.logo{
+    transition: 0.6s;
+}
+.logo:hover{
+    transform: scale(1.15);
 }
