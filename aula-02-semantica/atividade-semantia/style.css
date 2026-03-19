@@ -44,7 +44,7 @@ main{
     padding-right: 15px;
     padding-top: 5px;
 }
-main h3{
+.apresentar{
     background-color: #005A47;
     border-radius: 6px;
     padding: 10px;
@@ -56,3 +56,15 @@ main h3{
 .logo:hover{
     transform: scale(1.15);
 }
+.conteudo{
+    background-color: #005A47;
+    margin-top: 7px;
+    border-radius: 5px;
+    padding: 6px;
+    border-top: #FF4471 solid 5px;
+}
+hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
