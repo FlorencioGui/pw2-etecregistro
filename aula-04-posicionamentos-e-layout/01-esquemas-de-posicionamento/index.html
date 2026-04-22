@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquemas de posicionamento!</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h2>Positions - Comparação Visual</h2>
+    <div class="caixa static">Static</div> 
+    <!-- Quando se da ESPÇO no nome da class, ele cria duas classes, um elemento pode ter duas classes -->
+     <!-- O STATIC é na verdade a posição padrão de um elemento. -->
+
+    <div class="caixa relative">Relative</div>
+    <!-- O relative pode variar sua posição, ele pode variar em: LEFT, RIGHT, BOTTOM E TOP. -->
+    <!-- O relativo, mantém seu espaço reservado no fluxo do documento, ou seja, outra div NÃO PODE ocupar o antigo espaço do RELATIVE. -->
+    <div class="caixa static">Static pós relative</div> 
+    <!-- colocando uma static só para podermos visualizar -->
+
+    <div class="caixa absolute">Absolute</div>
+    <!-- O absolute faz a mesma coisa do relative, porém não conserva seu espaço original, outros elementos podem entrar no lugar dela. -->
+    <div class="caixa static">Static pós Absolute</div> 
+    <!-- colocando uma static só para podermos visualizar -->
+
+    <div class="caixa absolute sup">Absolute</div>
+    <!-- colocando aqui para testarmos o empilhamento -->
+
+    <div class="caixa fixed">Fixed</div>
+    <!-- Ele coloca um elemento fixo na tela. Sempre estará la! -->
+
+    <div class="caixa sticky">Sticky</div>
+    <!-- O sticky se mexe até certo ponto, quando chega em uma determinada posição, ele fica fixo em sua tela. -->
+
+    <div class="espaco"></div>
+</body>
+</html>

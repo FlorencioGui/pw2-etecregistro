@@ -1,0 +1,46 @@
+.caixa{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: #ccc;
+}
+.static{
+    position: static;
+    background-color: rgb(119, 119, 255);
+}
+.relative{
+    position: relative;
+    background-color: rgb(255, 212, 125);
+    left: 200px;
+    top: 50px;
+}
+.absolute{
+    position: absolute;
+    background-color: brown;
+    margin: 0;
+    top: 100px;
+    z-index: 1;
+}
+.sup{
+    z-index: 2;
+    /* O z-index define qual vai ser a camada qm eu o elemento estará no eixo Z, criando e organizando o emilhamento. */
+    background-color: blanchedalmond;
+    top: 120px;
+    left:20px;
+}
+.fixed{
+    position: fixed;
+    right: 10px;
+    background-color: red;
+    bottom: 10px;
+}
+.sticky{
+    background-color: green;
+    position: sticky;
+    top: 20px;
+
+}
+.espaco{
+    height: 600px;
+    background-color: grey;
+}
