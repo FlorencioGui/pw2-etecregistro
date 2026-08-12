@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anotações 05/08/2026</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="anotacoes">
+      <div class="anotacoes"></div>
+      <nav class="anotacoes">
+        <ul class="anotacoes">
+          <li class="anotacoes">
+            <a class="anotacoes link" href="#iniciacao">Iniciação ao JS</a>
+          </li>
+          <li class="anotacoes">
+            <a class="anotacoes link" href="#variaveis">Variáveis</a>
+          </li>
+          <li class="anotacoes">
+            <a class="anotacoes link" href="#sitecriadoemaula"
+              >Site criado em aula com o professor</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="anotacoes"></div>
+    </header>
+    <main class="anotacoes">
+      <section class="anotacoes">
+        <h2 class="anotacoes" id="iniciacao">Iniciação ao JS</h2>
+        <p class="anotacoes">
+          Essa é a nossa primeira interação com JS em aulas! Por isso,
+          começaremos do ZERO!
+        </p>
+      </section>
+      <section class="anotacoes">
+        <h3 class="anotacoes">Diferença entre as tecnologias</h3>
+        <div class="container3tecs anotacoes">
+          <div class="html anotacoes">
+            <img class="anotacoes" src="files/html.webp" alt="HTML" />
+            <p class="anotacoes">
+              O HTML na verdade é uma linguagem de Marcação, ele cuida das
+              partes estruturais de um site.
+            </p>
+          </div>
+          <div class="css anotacoes">
+            <img class="anotacoes" src="files/css.png" alt="CSS" />
+            <p class="anotacoes">
+              O CSS é uma linguagem de Estilização, ele cuida das partes visuais
+              de um site.
+            </p>
+          </div>
+          <div class="js anotacoes">
+            <img class="anotacoes" src="files/JS.webp" alt="JS" />
+            <p class="anotacoes">
+              O JS é uma linguagem de Programação, ele cuida das partes
+              funcionais e interativas de um site.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="anotacoes">
+        <h3 class="anotacoes">Origem do JS</h3>
+        <article class="anotacoes">
+          <p class="anotacoes">
+            O JavaScript foi criado em 1995 por Brendan Eich, um programador da
+            Netscape Communications Corporation. Inicialmente, o JavaScript foi
+            desenvolvido em apenas 10 dias e lançado como parte do navegador
+            Netscape Navigator 2.0.
+          </p>
+          <p>
+            A linguagem foi projetada para ser uma linguagem de script leve e
+            fácil de usar, permitindo que os desenvolvedores adicionassem
+            interatividade e dinamismo às páginas da web. Desde então, o
+            JavaScript evoluiu significativamente e se tornou uma das linguagens
+            de programação mais populares e amplamente utilizadas na web.
+          </p>
+        </article>
+      </section>
+      <section class="anotacoes">
+        <h3 class="anotacoes">Java Script não é Java</h3>
+        <article class="anotacoes">
+          <p>
+            Apesar do nome, o JavaScript não tem relação direta com a linguagem
+            de programação Java. O nome "JavaScript" foi escolhido por motivos
+            de marketing, aproveitando a popularidade do Java na época.
+          </p>
+          <p>
+            O JavaScript é uma linguagem de script interpretada, enquanto o Java
+            é uma linguagem de programação compilada. Além disso, o JavaScript é
+            executado principalmente em navegadores web, enquanto o Java pode
+            ser usado para desenvolver aplicativos independentes e aplicativos
+            móveis.
+          </p>
+          <p>
+            Por motivos de patente, o nome "JavaScript" foi substituído por
+            "ECMAScript", para evitar conflitos com a marca "Java"
+          </p>
+        </article>
+      </section>
+      <section class="anotacoes">
+        <h3 class="anotacoes" id="variaveis">Declaração de Variáveis em JS</h3>
+        <article class="anotacoes">
+          <p>
+            O JS só aceita nomes de variáveis que começam com uma letra, um
+            underscore (_) ou um cifrão ($). E deve estar escrito em padrão
+            camelCase.
+          </p>
+          <p>Uma variável não pode conter os seguintes aspectos:</p>
+          <ul>
+            <li>Espaços</li>
+            <li>Caracteres especiais (exceto underscore e cifrão)</li>
+            <li>Palavras reservadas da linguagem</li>
+          </ul>
+          <p>
+            Em JavaScript, existem três maneiras principais de declarar
+            variáveis: usando as palavras-chave <code>var</code>,
+            <code>let</code> e <code>const</code>.
+          </p>
+          <ul>
+            <li>
+              <strong>var:</strong> É a forma mais antiga de declarar variáveis
+              em JavaScript. Variáveis declaradas com <code>var</code> têm
+              escopo de função, o que significa que elas são acessíveis em toda
+              a função em que foram declaradas. Ela pode ser reatribuída e
+              redeclarada. No entanto, o uso de <code>var</code> é
+              <strong>desaconselhado</strong> em favor de <code>let</code> e
+              <code>const</code>, que oferecem um escopo mais previsível.
+            </li>
+            <li>
+              <strong>let:</strong> Introduzido no ECMAScript 6 (ES6), o
+              <code>let</code> permite declarar variáveis com escopo de bloco,
+              ou seja, elas só são acessíveis dentro do bloco em que foram
+              declaradas. Elas podem ser reatribuídas, mas não podem ser
+              redeclaradas no mesmo escopo.
+            </li>
+            <li>
+              <strong>const:</strong> Também introduzido no ES6, o
+              <code>const</code> é usado para declarar constantes, ou seja,
+              valores que não podem ser reatribuídos após a declaração. Assim
+              como o <code>let</code>, as constantes têm escopo de bloco. Ela
+              não pode ser redeclarada nem reatribuída. É importante notar que
+              objetos e arrays declarados com <code>const</code> podem ter seus
+              conteúdos modificados.
+            </li>
+          </ul>
+          <p>
+            O JS é uma linguagem dinamicamente tipada, ou seja, ela define o
+            tipo de dado de uma variável em tempo de execução. Não é necessário
+            declarar o tipo de uma variável explicitamente.
+          </p>
+        </article>
+      </section>
+
+      <section class="anotacoes">
+        <h3 class="anotacoes">Como criar exatamente este JavaScript</h3>
+        <article class="anotacoes">
+          <p>
+            Abaixo está a explicação completa do que foi feito no código do seu
+            JavaScript. Vou te mostrar cada parte, como funciona e para que
+            serve.
+          </p>
+
+          <h4>1. Declarando variáveis</h4>
+          <p>
+            Primeiro, criamos variáveis para guardar dados que o usuário vai
+            digitar ou que o programa vai usar. Em JavaScript, usamos
+            <code>var</code>, <code>let</code> e <code>const</code>.
+          </p>
+          <code>var nome = "Guilherme";</code>
+          <p>
+            Essa linha cria uma variável chamada <strong>nome</strong> e guarda
+            o texto <strong>Guilherme</strong>. O <code>var</code> é uma forma
+            mais antiga de declarar variáveis, mas ainda aparece em vários
+            códigos.
+          </p>
+
+          <code>let cidade = "Registro";</code>
+          <p>
+            O <code>let</code> é mais moderno e recomendado. Ele cria uma
+            variável que pode mudar de valor depois, por exemplo:
+          </p>
+          <code>cidade = "São Paulo";</code>
+          <p>Isso significa que você pode trocar o valor da variável depois.</p>
+
+          <code>const idade = 16;</code>
+          <p>
+            O <code>const</code> serve para criar uma constante. Isso quer dizer
+            que o valor não pode ser mudado depois de declarado. Por isso, o
+            JavaScript avisa erro se você tentar fazer algo como:
+          </p>
+          <code>idade = 17;</code>
+
+          <h4>2. Entrada de dados com prompt</h4>
+          <p>
+            Em seguida, usamos <code>window.prompt()</code> para solicitar dados
+            ao usuário. Essa função abre uma caixa de diálogo e o usuário
+            escreve um valor, que será armazenado na variável.
+          </p>
+          <code>var nome = window.prompt("Digite seu nome: ");</code>
+          <p>
+            Esse valor entra como texto, ou seja, como <strong>string</strong>.
+            O JavaScript lê tudo como texto por padrão, até você converter para
+            número.
+          </p>
+
+          <code>let cidade = window.prompt("Digite sua cidade: ");</code>
+          <p>
+            A variável <strong>cidade</strong> recebe o texto digitado pelo
+            usuário. Depois, podemos sobrescrever esse valor com outro texto,
+            como no seu exemplo:
+          </p>
+          <code>cidade = "São paulo";</code>
+
+          <code
+            >const idade = Number(window.prompt("Digite sua idade: "));</code
+          >
+          <p>
+            Aqui a função <code>Number()</code> converte o valor digitado em um
+            número. Isso é essencial quando você quer fazer operações
+            matemáticas. Sem essa conversão, a idade poderia ser tratada como
+            texto.
+          </p>
+
+          <h4>3. Saída na tela com document.write</h4>
+          <p>
+            O <code>document.write()</code> escreve um conteúdo diretamente na
+            página. Ele é muito usado para mostrar mensagens, valores de
+            variáveis e resultados.
+          </p>
+          <code>document.write(nome);</code>
+          <p>
+            Isso mostra o valor da variável <strong>nome</strong> na página.
+          </p>
+
+          <code>document.write("<br />");</code>
+          <p>
+            Esse trecho cria uma quebra de linha. É como se fosse um Enter
+            dentro da página HTML.
+          </p>
+
+          <h4>4. Concatenação</h4>
+          <p>
+            A concatenação é a junção de textos ou valores em uma mesma string.
+            Em JavaScript, usamos o sinal <code>+</code>.
+          </p>
+          <code>document.write("Eu moro em " + cidade + "<br />");</code>
+          <p>
+            Esse código junta o texto "Eu moro em ", o valor da variável cidade
+            e a quebra de linha. O resultado final é algo como "Eu moro em São
+            paulo".
+          </p>
+
+          <h4>5. Template string e placeholder</h4>
+          <p>
+            A versão mais moderna e elegante de concatenar textos é usar
+            template strings, com crases <code>`</code> e a sintaxe
+            <code>${}</code>.
+          </p>
+          <code>document.write(`Eu moro em ${cidade} <br />`);</code>
+          <p>
+            O <strong>${cidade}</strong> é o placeholder. Ele indica: "coloque o
+            valor da variável cidade aqui". Isso deixa o código mais legível e
+            organizado.
+          </p>
+
+          <h4>6. Verificando o tipo da variável</h4>
+          <p>
+            O operador <code>typeof</code> mostra o tipo do valor guardado em
+            uma variável.
+          </p>
+          <code>typeof nome</code>
+          <code>typeof idade</code>
+          <code>typeof cidade</code>
+          <p>
+            Isso ajuda a saber se a variável é uma string, number, boolean etc.
+          </p>
+
+          <h4>7. Alerta para o usuário</h4>
+          <p>
+            O comando <code>alert()</code> aparece como uma popup na tela do
+            usuário. Ele é usado para avisos, mensagens de boas-vindas ou
+            confirmação.
+          </p>
+          <code>alert(`Olá, ${nome}! Seja bem-vindo ao meu site!`);</code>
+          <p>
+            Aqui o código usa o valor da variável <strong>nome</strong> dentro
+            da mensagem, com template string.
+          </p>
+
+          <h4>8. Calculando com números</h4>
+          <p>
+            Quando você quer somar dois números que vieram do usuário, precisa
+            primeiro transformar os valores em número.
+          </p>
+          <code>
+            const num1 = Number(window.prompt("Digite o primeiro número: "));
+            const num2 = Number(window.prompt("Digite o segundo número: "));
+            const soma = num1 + num2;
+          </code>
+          <p>
+            Esse trecho pede dois valores, converte ambos para número e faz a
+            soma. Depois mostra o resultado na tela.
+          </p>
+
+          <h4>9. Transformando texto</h4>
+          <p>
+            A linguagem JavaScript também oferece métodos para alterar texto.
+          </p>
+          <code>nomeCompleto.toUpperCase()</code>
+          <p>Esse comando transforma tudo em letras maiúsculas.</p>
+
+          <code>nomeCompleto.toLowerCase()</code>
+          <p>Esse comando transforma tudo em letras minúsculas.</p>
+
+          <h4>10. Formatando números e moedas</h4>
+          <p>
+            Para formatar valores monetários, usamos <code>toFixed()</code> e
+            <code>toLocaleString()</code>.
+          </p>
+          <code>salario.toFixed(2)</code>
+          <p>Isso mostra o valor com duas casas decimais, como 2500.00.</p>
+
+          <code
+            >salario.toLocaleString("pt-BR", { style: "currency", currency:
+            "BRL" })</code
+          >
+          <p>
+            Esse código formata o valor em moeda brasileira, exibindo "R$
+            2.500,00". Em outras palavras, ele adapta o valor para o padrão do
+            Brasil.
+          </p>
+
+          <h4>11. Resumo final</h4>
+          <p>O seu JavaScript faz exatamente isso:</p>
+          <ul>
+            <li>pega dados do usuário;</li>
+            <li>salva em variáveis;</li>
+            <li>converte valores quando necessário;</li>
+            <li>faz operações matemáticas;</li>
+            <li>mostra mensagens e resultados na página;</li>
+            <li>formata texto e valores para deixar a saída mais bonita.</li>
+          </ul>
+          <p>
+            Esse é o básico da programação em JavaScript: receber dados,
+            processar e mostrar o resultado.
+          </p>
+        </article>
+      </section>
+
+      <section class="anotacoes">
+        <h3 class="anotacoes" id="sitecriadoemaula">
+          Site feito em aula com o professor:
+        </h3>
+      </section>
+    </main>
+
+    <script>
+      // VAR
+      // var nome = "Guilherme";
+      // document.write(nome);
+      // document.write("<br>");
+      var nome = window.prompt("Digite seu nome: ");
+      document.write(nome);
+
+      // LET
+      let cidade = window.prompt("Digite sua cidade: ");
+      // let cidade = "Pariquera"; --> o próprio JS não nos deixa fazer isso, da erro
+      cidade = "São paulo";
+      document.write("<br>");
+      document.write(`Eu moro em ${cidade} <br>`);
+
+      // CONST
+      const idade = Number(window.prompt("Digite sua idade: "));
+      // idade = 17; --> o próprio JS não nos deixa fazer isso, da erro
+      document.write(`Eu tenho ${idade} anos <br>`);
+
+      // VERIFICANDO O TIPO DAS VARIÁVEIS
+      document.write(`O tipo da variável nome é: ${typeof nome} <br>`);
+      document.write(`O tipo da variável idade é: ${typeof idade} <br>`);
+      document.write(`O tipo da variável cidade é: ${typeof cidade} <br>`);
+
+      // Exibindo uma mensagem de alerta ao usuário
+      alert(`Olá, ${nome}! Seja bem-vindo ao meu site!`);
+
+      //Solicitando ao usuário dois números
+      const num1 = Number(window.prompt("Digite o primeiro número: "));
+      const num2 = Number(window.prompt("Digite o segundo número: "));
+      const soma = num1 + num2;
+      document.write(`A soma de ${num1} e ${num2} é: ${soma} <br>`);
+
+      //FORMATANDO STRINGS
+      const nomeCompleto = window.prompt("Digite seu nome completo: ");
+      document.write(
+        `Nome completo em maiúsculas: ${nomeCompleto.toUpperCase()} <br>`,
+      );
+      document.write(
+        `Nome completo em minúsculas: ${nomeCompleto.toLowerCase()} <br>`,
+      );
+
+      // FORMATAÇÃO DE NÚMEROS
+      const salario = 2500;
+      document.write(`Salário formatado: R$ ${salario.toFixed(2)} <br>`);
+      document.write(
+        `Salário formatado com vírgula: R$ ${salario.toLocaleString("pt-BR", { minimumFractionDigits: 2 })} <br>`,
+      );
+
+      //FORMATAÇÃO DE MOEDA
+      document.write(
+        `Salário formatado como moeda:${salario.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        })} <br>`,
+      );
+
+      document.write(
+        `Salário formatado como moeda (USD): ${salario.toLocaleString(
+          "en-US",
+          {
+            style: "currency",
+            currency: "USD",
+          },
+        )} <br>`,
+      );
+    </script>
+  </body>
+</html>
