@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 08: Manipulação do DOM e Eventos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="folha">
+      <header>
+        <h1 class="title">Aula 08: Manipulação do DOM e Eventos</h1>
+        <h2 class="tituloLista">Conteúdos da Aula:</h2>
+        <ul>
+          <li>
+            <a href="revisao-dom">Revisão do DOM (Document Object Model)</a>
+          </li>
+          <li>
+            <a href="capturando-elementos">
+              Capturando elementos do DOM com JavaScript
+            </a>
+          </li>
+          <li>
+            <a href="escutando-eventos">"Escutando" eventosna página</a>
+          </li>
+          <li>
+            <a href="invocando-funcoes">Invocando funções</a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section class="revisaoDom"></section>
+        <section class="capturandoElementos">
+          <h2>Capturando Elementos do DOM com JavaScript</h2>
+          <h3>Formas de Captura:</h3>
+          <ol>
+            <li>Por Tag: <code>document.getElementsByTagName('p')[1]</code></li>
+            <li>Por ID: <code>document.getElementById('id-elemento')</code></li>
+            <li>
+              Por Nome: <code>document.getElementsByName('nome-elemento')</code>
+            </li>
+            <li>
+              Por Classe:
+              <code>document.getElementsByClassName('classe-elemento')</code>
+            </li>
+            <li>
+              Por Seletor:
+              <code>document.querySelector('.seletor' ou '#seletor')</code> e
+              <code>document.querySelectorAll('seletor')</code>
+            </li>
+          </ol>
+        </section>
+        <section class="eventos">
+          <h2>"Escutando" Eventos na Página</h2>
+          <h3>Eventos mais comuns:</h3>
+          <ul>
+            <li>click: Disparado quando o usuário clica em um elemento.</li>
+            <li>
+              mouseover: Disparado quando o cursor do mouse entra em um
+              elemento.
+            </li>
+            <li>
+              mouseout: Disparado quando o cursor do mouse sai de um elemento.
+            </li>
+            <li>keydown: Disparado quando uma tecla é pressionada.</li>
+            <li>keyup: Disparado quando uma tecla é solta.</li>
+            <li>load: Disparado quando a página é carregada completamente.</li>
+            <li>unload: Disparado quando a página é fechada.</li>
+            <li>submit: Disparado quando um formulário é enviado.</li>
+            <li>focus: Disparado quando um elemento recebe foco.</li>
+          </ul>
+          <h3>Código criado em aula:</h3>
+          <article>
+            <p>
+              <code> </code>
+            </p>
+          </article>
+          <a href="01-selecionando-elementos-do-dom/index.html"
+            >Acessar a página feita em aula</a
+          >
+        </section>
+      </main>
+      <footer>
+        <p>© 2024 - Guilherme Florêncio</p>
+      </footer>
+    </div>
+  </body>
+</html>
