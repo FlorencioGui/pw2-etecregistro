@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.luz{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 2px;
+    background-color: gray;
+}
+
+#btnParar{
+    background-color: red;
+    color: white;
+}
+
+#btnAtencao{
+    background-color: yellow;
+    color: black;
+}
+
+#btnSiga{
+    background-color: green;
+    color: white;
+}
