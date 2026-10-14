@@ -86,15 +86,119 @@
         </div>
       </section>
 
-      <div class="alert alert-warning alert-dismissible fade show text-center mb-5" role="alert">
+      <div
+        class="alert alert-warning alert-dismissible fade show text-center mb-5"
+        role="alert"
+      >
         Atenção: Esta página é um exemplo didático usado para fins educacionais.
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
       </div>
-      <div class="alert alert-info alert-dismissible fade show text-center mb-5" role="alert">
+      <div
+        class="alert alert-info alert-dismissible fade show text-center mb-5"
+        role="alert"
+      >
         Esse alert foi criado só pelo MEME
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
       </div>
 
+      <!-- Formulário de contato -->
+
+      <section class="mb-5">
+        <form action="">
+          <h3 class="mb-3 border-bottom pb-2">Entre em Contato</h3>
+          <div class="mb-3">
+            <label for="nomeInput" class="form-label">Nome Completo:</label>
+            <input
+              type="text"
+              id="nomeInput"
+              class="form-control mb-3"
+              placeholder="Digite seu nome"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email:</label>
+            <input
+              type="email"
+              id="emailInput"
+              class="form-control mb-3"
+              placeholder="Digite seu email"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="msgInput" class="form-label">Mensagem:</label>
+            <textarea
+              id="msgText"
+              name="msgText"
+              class="form-control mb-3"
+              placeholder="Digite sua mensagem"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#confirmacaoModal"
+          >
+            Enviar Mensagem
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <!-- Modal de alerta -->
+    <div
+      class="modal fade"
+      id="confirmacaoModal"
+      tabindex="-1"
+      aria-labelledby="confirmacaoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmacaoModalLabel">
+              Confirmar Envio
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Tem certeza que deseja enviar esta mensagem?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Revisar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
